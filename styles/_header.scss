@@ -1,0 +1,30 @@
+header {
+  background-color: $back_ground_color;
+  padding: 1rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+
+  .header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      color: $primary_color;
+      font-size: 2rem;
+    }
+    button {
+      background-color: $primary_color;
+      color: white;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      &:hover {
+        background-color: darken($primary_color, 10%);
+      }
+    }
+  }
+}
